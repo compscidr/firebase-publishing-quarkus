@@ -1,0 +1,13 @@
+[versions]
+agp = "8.7.1"
+kotlin = "2.0.21"
+
+[libraries]
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version = "1.7.0" }
+
+[bundles]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+firebase-app-distribution = { id = "com.google.firebase.appdistribution", version = "5.0.0" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
