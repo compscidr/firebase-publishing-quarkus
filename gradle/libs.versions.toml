@@ -1,13 +1,31 @@
 [versions]
 agp = "8.7.1"
 kotlin = "2.0.21"
+quarkus = "3.16.0"
 
 [libraries]
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version = "1.7.0" }
+jackson_core = { module = "com.fasterxml.jackson.core:jackson-core", version = "2.18.0" }
+quarkus-bom = { module = "io.quarkus:quarkus-bom", version.ref = "quarkus" }
+quarkus-hibernate-orm-panache-kotlin = { module = "io.quarkus:quarkus-hibernate-orm-panache-kotlin" }
+quarkus-jdbc-postgresql = { module = "io.quarkus:quarkus-jdbc-postgresql" }
+quarkus_junit5 = { module = "io.quarkus:quarkus-junit5" }
+quarkus-kotlin = { module = "io.quarkus:quarkus-kotlin", version.ref = "quarkus" }
+quarkus-reactive-routes = { module = "io.quarkus:quarkus-reactive-routes"}
+quarkus-rest = { module = "io.quarkus:quarkus-rest"}
+quarkus-rest-qute = { module = "io.quarkus:quarkus-rest-qute"}
+quarkus_test_security = { module = "io.quarkus:quarkus-test-security" }
+quarkus-flyway = { module = "io.quarkus:quarkus-flyway" }
+rest_assured = { module = "io.rest-assured:rest-assured", version = "5.5.0" }
 
 [bundles]
+quarkus = ["quarkus-kotlin", "quarkus-reactive-routes", "quarkus-rest", "quarkus-rest-qute", "quarkus-hibernate-orm-panache-kotlin", "quarkus-jdbc-postgresql", "quarkus-flyway"]
+quarkus-test = ["quarkus_junit5", "rest_assured", "quarkus_test_security"]
 
 [plugins]
+allopen = { id = "org.jetbrains.kotlin.plugin.allopen", version.ref = "kotlin" }
 android-application = { id = "com.android.application", version.ref = "agp" }
 firebase-app-distribution = { id = "com.google.firebase.appdistribution", version = "5.0.0" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+quarkus = { id = "io.quarkus", version.ref = "quarkus" }
