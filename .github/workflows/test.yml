@@ -33,6 +33,6 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       - name: Build and Test Android App
-        run: ./gradlew :androidapp test
+        run: ./gradlew :androidapp:test
       - name: Build and Test Quarkus App
         run: ./gradlew -Pquarkus :quarkusapp:test
