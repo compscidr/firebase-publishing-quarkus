@@ -5,7 +5,7 @@ quarkus = "3.19.1"
 
 [libraries]
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version = "1.7.0" }
-jackson_core = { module = "com.fasterxml.jackson.core:jackson-core", version = "2.18.2" }
+jackson_core = { module = "com.fasterxml.jackson.core:jackson-core", version = "2.18.3" }
 quarkus-bom = { module = "io.quarkus:quarkus-bom", version.ref = "quarkus" }
 quarkus-hibernate-orm-panache-kotlin = { module = "io.quarkus:quarkus-hibernate-orm-panache-kotlin" }
 quarkus-jdbc-postgresql = { module = "io.quarkus:quarkus-jdbc-postgresql" }
