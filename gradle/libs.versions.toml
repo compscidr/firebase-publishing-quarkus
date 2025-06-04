@@ -4,7 +4,7 @@ kotlin = "2.1.21"
 quarkus = "3.23.0"
 
 [libraries]
-androidx-appcompat = { module = "androidx.appcompat:appcompat", version = "1.7.0" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version = "1.7.1" }
 jackson_core = { module = "com.fasterxml.jackson.core:jackson-core", version = "2.19.0" }
 quarkus-bom = { module = "io.quarkus:quarkus-bom", version.ref = "quarkus" }
 quarkus-hibernate-orm-panache-kotlin = { module = "io.quarkus:quarkus-hibernate-orm-panache-kotlin" }
