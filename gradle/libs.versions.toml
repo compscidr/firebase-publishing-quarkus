@@ -16,7 +16,7 @@ quarkus-rest = { module = "io.quarkus:quarkus-rest"}
 quarkus-rest-qute = { module = "io.quarkus:quarkus-rest-qute"}
 quarkus_test_security = { module = "io.quarkus:quarkus-test-security" }
 quarkus-flyway = { module = "io.quarkus:quarkus-flyway" }
-rest_assured = { module = "io.rest-assured:rest-assured", version = "5.5.5" }
+rest_assured = { module = "io.rest-assured:rest-assured", version = "5.5.6" }
 
 [bundles]
 quarkus = ["quarkus-kotlin", "quarkus-reactive-routes", "quarkus-rest", "quarkus-rest-qute", "quarkus-hibernate-orm-panache-kotlin", "quarkus-jdbc-postgresql", "quarkus-flyway"]
