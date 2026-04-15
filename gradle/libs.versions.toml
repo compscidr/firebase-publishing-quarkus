@@ -1,7 +1,7 @@
 [versions]
 agp = "9.1.1"
 kotlin = "2.3.20"
-quarkus = "3.34.3"
+quarkus = "3.34.4"
 
 [libraries]
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version = "1.7.1" }
