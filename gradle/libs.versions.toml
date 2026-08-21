@@ -1,11 +1,11 @@
 [versions]
-agp = "8.13.2"
-kotlin = "2.3.0"
-quarkus = "3.31.0"
+agp = "9.3.1"
+kotlin = "2.4.10"
+quarkus = "3.39.0"
 
 [libraries]
-androidx-appcompat = { module = "androidx.appcompat:appcompat", version = "1.7.1" }
-jackson_core = { module = "com.fasterxml.jackson.core:jackson-core", version = "2.21.0" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version = "1.8.0" }
+jackson_core = { module = "com.fasterxml.jackson.core:jackson-core", version = "2.22.2" }
 quarkus-bom = { module = "io.quarkus:quarkus-bom", version.ref = "quarkus" }
 quarkus-hibernate-orm-panache-kotlin = { module = "io.quarkus:quarkus-hibernate-orm-panache-kotlin" }
 quarkus-jdbc-postgresql = { module = "io.quarkus:quarkus-jdbc-postgresql" }
@@ -16,7 +16,7 @@ quarkus-rest = { module = "io.quarkus:quarkus-rest"}
 quarkus-rest-qute = { module = "io.quarkus:quarkus-rest-qute"}
 quarkus_test_security = { module = "io.quarkus:quarkus-test-security" }
 quarkus-flyway = { module = "io.quarkus:quarkus-flyway" }
-rest_assured = { module = "io.rest-assured:rest-assured", version = "6.0.0" }
+rest_assured = { module = "io.rest-assured:rest-assured", version = "6.0.1" }
 
 [bundles]
 quarkus = ["quarkus-kotlin", "quarkus-reactive-routes", "quarkus-rest", "quarkus-rest-qute", "quarkus-hibernate-orm-panache-kotlin", "quarkus-jdbc-postgresql", "quarkus-flyway"]
@@ -25,7 +25,6 @@ quarkus-test = ["quarkus_junit5", "rest_assured", "quarkus_test_security"]
 [plugins]
 allopen = { id = "org.jetbrains.kotlin.plugin.allopen", version.ref = "kotlin" }
 android-application = { id = "com.android.application", version.ref = "agp" }
-firebase-app-distribution = { id = "com.google.firebase.appdistribution", version = "5.2.0" }
-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+firebase-app-distribution = { id = "com.google.firebase.appdistribution", version = "5.3.0" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 quarkus = { id = "io.quarkus", version.ref = "quarkus" }
