@@ -3,13 +3,6 @@ name: Bump admin portal test
 on:
   pull_request:
     types: [ opened, synchronize ]
-    paths:
-      - 'androidapp/**'
-      - 'quarkusapp/**'
-      - '.github/workflows/test.yml'
-      - 'build.gradle.kts'
-      - 'settings.gradle.kts'
-      - 'gradle/**'
   push:
     branches:
       - main
